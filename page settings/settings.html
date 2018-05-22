@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Settings</title>
+</head>
+<body>
+    
+    <div>
+        <label for="langues">Langue</label>
+        <select name="langues" id="langues">
+            <option value="français" selected>Français</option>
+            <option value="anglais">Anglais</option>
+            <option value="espagnol">Espagnol</option>
+        </select>
+    </div>
+    
+    <div><label for="mdp"><a href="#">Changer mot de passe</a></div></label>
+    <div>
+        <label for="notif">Notification</label>
+        <form action="#" method="post">
+            <input type="checkbox" name="2h"> <label for="2h">2h</label>
+            <input type="checkbox" name="8h"> <label for="8h">8h</label>
+            <input type="checkbox" name="24h" checked> <label for="24h">24h</label>
+            <input type="checkbox" name="48h"> <label for="48h">48h</label>
+        </form>
+    </div>
+    <div>
+        <input type="range" min="1" max="2" step="0.5">
+    </div>
+    <div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div><label for="play"><a href="#">Rejouer le Tutoriel</a></div></label>
+
+    <script src="script.js"></script>
+</body>
+</html>
