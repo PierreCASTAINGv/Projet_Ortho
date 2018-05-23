@@ -226,48 +226,35 @@ input.gn-search:focus {
 		-webkit-font-smoothing: antialiased;
 }
 
-.gn-icon-help::before {
-		content: "\e008"
+.gn-icon-home::before {
+		content: url('../fonts/home3.png');
+		width:7%;
+		height:7%;
 }
 
-.gn-icon-earth::before {
-		content: "\e004"
+.gn-icon-cabinet::before {
+		content: url('../fonts/cabinet.svg');
 }
 
-.gn-icon-cog::before {
-		content: "\e006"
+.gn-icon-dossier::before {
+		content: url('../fonts/dossier.svg');
 }
 
-.gn-icon-search::before {
-		content: "\e005"
+.gn-icon-chat::before {
+		content: url('../fonts/chat2.svg');
 }
 
-.gn-icon-download::before {
-		content: "\e007"
+.gn-icon-parametre::before {
+		content: url('../fonts/parametre.svg');
 }
 
-.gn-icon-photoshop::before {
-		content: "\e001"
+.gn-icon-profil::before {
+		content: url('../fonts/profil.svg');
 }
 
-.gn-icon-illustrator::before {
-		content: "\e002"
-}
 
 .gn-icon-archive::before {
 		content: "\e00d"
-}
-
-.gn-icon-article::before {
-		content: "\e003"
-}
-
-.gn-icon-pictures::before {
-		content: "\e008"
-}
-
-.gn-icon-videos::before {
-		content: "\e009"
 }
 
 /* if an icon anchor has a span, hide the span */
