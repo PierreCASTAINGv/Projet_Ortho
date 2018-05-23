@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Menu Global</title>
+		<meta name="description" content="Menu generique" />
+		<meta name="keywords" content="orthalis, orthondontiste, pau" />
+		<meta name="author" content="king''s" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li><a class="gn-icon gn-icon-dossier" href="accueil.html">Accueil</a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="cabinet.html">Cabinet</a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html">Dossier Patient</a></li>
+								<li><a class="gn-icon gn-icon-profil" href="monprofil.html">Mon Profil</a></li>
+								<li><a class="gn-icon gn-icon-chat" href="chat.html">Chat</a></li>
+								<li><a class="gn-icon gn-icon-parametre" href="parametres.html">Paramètre</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li class="smenu"><a href="#">Orthalis</a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="accueil.html"><span>Acceuil</span></a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="cabinet.html"><span>Cabinet</span></a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="dossierpatient.html"><span>Dossier Patient</span></a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="monprofil.html"><span>Mon Profil</span></a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="chat.html"><span>Chat</span></a></li>
+				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="parametres.html"><span>Paramètres</span></a></li>
+				
+			</ul>
+			<header>
+				<h1>Container page <strong> CHAT </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
+			</header> 
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
 </html>

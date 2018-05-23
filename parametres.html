@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Menu Global</title>
+		<title>Paramètres</title>
 		<meta name="description" content="Menu generique" />
 		<meta name="keywords" content="orthalis, orthondontiste, pau" />
 		<meta name="author" content="king''s" />
@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylekornel.css">
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
@@ -45,10 +46,44 @@
 				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="parametres.html"><span>Paramètres</span></a></li>
 				
 			</ul>
-			<header>
-				<h1>Container page <strong> CABINET </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
-			</header> 
 		</div><!-- /container -->
+		<div id="settings">
+			<div class="kornel">
+				<label for="langues">Langue</label>
+				<select name="langues" id="langues">
+					<option value="français" selected>Français</option>
+					<option value="anglais">Anglais</option>
+					<option value="espagnol">Espagnol</option>
+				</select>
+			</div>
+			
+			<div class="kornel">
+				<label for="mdp"><a href="#">Changer mot de passe</a></label>
+			</div>
+			<div class="kornel">
+				<label for="notif">Notification</label>
+				<form action="#" method="post">
+					<input type="checkbox" name="2h"> <label for="2h">2h</label>
+					<input type="checkbox" name="8h"> <label for="8h">8h</label>
+					<input type="checkbox" name="24h" checked> <label for="24h">24h</label>
+					<input type="checkbox" name="48h"> <label for="48h">48h</label>
+				</form>
+			</div>
+			<div class="kornel">
+				<label for="taille">Taille du texte</label><br>
+				<input type="range" min="1" max="2" step="0.5">
+			</div>
+			<div class="kornel">
+				<label for="contraste">Contraste</label>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+			<div class="kornel">
+				<label for="play"><a href="#">Rejouer le Tutoriel</a></label>
+			</div>
+		</div>
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
 		<script>
