@@ -74,7 +74,7 @@
 }
 
 .gn-menu-main > li:last-child {
-		float: right;
+		float: left;
 		border-right: none;
 		border-left: 1px solid #c6d0da;
 }
