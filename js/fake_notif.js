@@ -30,7 +30,7 @@ function notif(){
 
 function time(){
     document.querySelector('#notification').style.top ="-600px";
-    interval = setTimeout(ping,600000); // declenche la fonction "ping" toute les dix minutes 
+    interval = setTimeout(ping,60000); // declenche la fonction "ping" toute les dix minutes 
 }
 
 function ping(){

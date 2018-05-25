@@ -6,6 +6,7 @@
         <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link href="./css/accueil.css" rel="stylesheet">
     </head>
     <body>
         <header class="bouge">
@@ -24,10 +25,37 @@
                 <a href="info_patient.html"><div><img src='src/icons/file.png'>Dossier Patient</div></a>
                 <a href="parametres.html"><div><img src='src/icons/settings.png'>Paramètres</div></a>
         </section>
-        <main class="bouge">
-            Cabinet
+        <main class="bouge">                    
+                    <h1>Vos rendez-vous</h1>
+                    
+                    <div class="accordeon"><img src="./src/vignette.jpg" alt="portrait">Le <span>13 juin 2018</span> à <span>16H30</span></div>
+                    <div class="content">
+                        <p>Avec le docteur Strauss</p>
+                        <p>Pour la pose d'un appareil</p>
+                    </div>
+                    <div class="accordeon">Le<span> 20 août</span> 2018 à <span>16H30</span></div>
+                    <div class="content">
+                        <p>Avec le docteur Caramel</p>
+                        <p>Contrôle après 3 mois</p>
+                    </div>
+       
         </main>
-        
+        <script>
+                var slide = document.getElementsByClassName("accordeon");
+                var i;
+                
+                for (i = 0; i < slide.length; i++) {
+                  slide[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+        </script>
         <script src="js/menu.js"></script>
         <script src="js/fake_notif.js"></script>
     </body>

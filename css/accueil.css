@@ -1,0 +1,74 @@
+
+main {
+    padding: 110px 25px 25px;
+    border-radius: 25px; 
+    box-shadow: 3px 3px 18px rgba(102, 97, 97);
+}
+main h1 {
+    display: inline-block;
+    margin: 0 0 20px 25%;
+    font-size: 1.6em;
+    color:  rgb(106, 13, 134);
+    text-shadow: 4px 4px 16px rgba(102, 97, 97);
+}
+
+.accordeon {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 18px 18px 18px 80px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 20px;
+    background: rgba(88,73,110,0.8);
+}
+
+.active, .accordeon:hover {
+    background: rgba(88,73,110,0.8);
+}
+.accordeon:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    color: rgb(255, 38, 244);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.accordeon {
+    margin: 0 0 15px;
+    background: rgba(88,73,110,0.8);
+    box-shadow: 5px 5px 12px rgba(102, 97, 97,0.7);
+}
+.accordeon span {
+    color: rgb(255, 38, 244);
+}
+.accordeon img {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.content {
+    margin: 0 0 10px;
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: rgba(212, 206, 221, 0.8);
+    border-radius: 5px;
+}
+.content p {
+    color:rgb(88,73,110);
+    border-radius: 20px;
+    margin: 0.6em;
+}
+
