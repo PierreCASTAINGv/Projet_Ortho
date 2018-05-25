@@ -1,0 +1,83 @@
+html,body{
+    margin:0;padding:0;
+    width: 100%; height: 100%;
+    background: url("../src/fond.jpeg") no-repeat fixed;
+    background-size: cover;
+}
+header{
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    transition: transform 0.5s linear;
+}
+header div{/* icone burger */
+    color:white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+header div h2:nth-child(2){
+    margin: auto;
+}
+
+/* menu burger */
+#menu{/* conteneur du menu */
+    background-color: rgba(255, 255, 255, 0.233);
+    color:white;
+    left:-150%;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    transition: transform 0.5s linear;
+    overflow: hidden;
+}
+#menu div{/* éléments du menu */
+    border-bottom: 0.1em rgba(255, 255, 255, 0.219) solid ;
+    height: 3%;
+    margin:0% 12.5%;
+    padding:6% 20%;
+    position: relative;}
+#menu div:hover{
+    background-color: rgba(145, 145, 145, 0.39);}
+#menu a:first-child div{/* photo de profil de l'utilisateur*/
+    background: url("../src/profil.jpeg") no-repeat; 
+    background-size: cover;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 10%;
+    padding:0%;
+    width: 100px;height: 100px;}
+#menu a:nth-child(2){/*profil de l'utilisateur*/
+    background:none;
+    height: 5%;
+    margin-top:2%;
+    margin:auto;
+    padding:0%;
+    text-align: center;}
+#menu img{/* icones du menu */
+    position: absolute;
+    left:12.5%;
+    top:20%;
+    width: 10%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+/* contenu de la page */
+main{
+    background-color: white;
+    border-radius: 30px;
+    margin:30% 10% 5% 10% ;
+    min-height: 500px;
+    padding:20px;
+    position: absolute;
+    width: 70%;
+    transition: transform 0.5s linear;
+    min-width: 200px;
+}
+
+.bouge{
+    transition: transform 0.5s linear;
+    transform: translateX(150%);}

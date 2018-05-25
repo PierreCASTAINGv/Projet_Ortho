@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/profil.css" />
+    </head>
+    <body>
+        <header class="bouge">
+            <div onclick="bloque()">
+               <!-- <p> &#60</p>-->
+               <h1 style='font-size: 4em;'>≡</h1>
+            </div>
+        </header>
+        <section id="menu" class="bouge">
+                <a href="profil.html"><div></div></a>
+                <a href="profil.html"><div>Francois Géant</div></a>
+                <a href="accueil.html"><div><img src='src/icons/home.png'>Accueil</div></a>
+                <a href="cabinet.html"><div><img src='src/icons/cabinet.png'>Cabinet</div></a>
+                <a href="chat.html"><div><img src='src/icons/chat.png'>Chat</div></a>
+                <a href="rdv.html"><div><img src='src/icons/calendar.png'>Rendez-vous</div></a>
+                <a href="info_patient.html"><div><img src='src/icons/file.png'>Dossier Patient</div></a>
+                <a href="parametres.html"><div><img src='src/icons/settings.png'>Paramètres</div></a>
+        </section>
+        <main class="bouge">
+            <section>
+            <div></div><!--Profil pic-->
+            
+            <div onclick="edit(this)">
+                <label>Nom</label>
+                <p>Francois Géant</p>
+                <img src="src/icons/edit.png" class="edit" >
+            </div>
+            <div onclick="edit(this)">
+                <label>Téléphone</label>
+                <p>06.09.98.34.XX</p>
+                <img src="src/icons/edit.png" class="edit" >
+            </div>
+            <div onclick="edit(this)">
+                <label>Adresse</label>
+                <p>7 rue des feuilles mortes</p>
+                <img src="src/icons/edit.png" class="edit" >
+            </div>
+            <div>
+                <label>Premier Rendez-vous</label>
+                <p>07/08/2016</p>
+            </div>
+            <div>
+                <label>Praticien</label>
+                <p>Dr. Roger</p>
+            </div>
+            </section>
+            <div class="container">
+            <!--
+            pour les flèches
+            <p><</p>
+            <p>></p>-->
+        <div id="cache-img">
+            <div>
+                <img src="./src/img4.jpg" alt="images">
+            </div>
+            <div>
+                <img src="./src/img2.jpg" alt="images">
+            </div>
+            <div>
+                <img src="./src/img3.jpg" alt="images">
+            </div>
+            <div>
+                <img src="./src/img5.jpg" alt="images">
+            </div>
+            <div>
+                <img src="./src/img6.jpg" alt="images">
+            </div>
+        </div>
+    </div>
+            <!--<div class="container">
+                <div id="h1">Info Patient</div>
+                <img id="img" src="./src/profil.jpeg" alt="photo">
+                <div>
+                    <input type="text" name="nom" value="Casnave">
+                    <button onclick="myN()">Vérifier</button>
+                </div>
+                <div>
+                    <input type="text" name="Prénon" value="Lucie">
+                    <button onclick="myP()">Vérifier</button>
+                </div>
+                <div>
+                    <input type="text" name="tel" value="098654322">
+                    <button onclick="myT()">Vérifier</button>
+                </div>
+                <div>
+                    <input type="text" name="adresse" value="Avenue Buros">
+                    <button onclick="myA()">Vérifier</button>
+                </div>
+            </div>-->
+
+            <!--
+            <div class="slider">
+                <div class="cimages">
+                    <div class="sld">
+                        <img src="./src/p1.jpg" alt="images">
+                    </div>
+                    <div class="sld">
+                        <img src="./src/p2.jpg" alt="images">
+                    </div>
+                    <div class="sld">
+                        <img src="./src/p3.jpg" alt="images">
+                    </div>
+                </div>
+            </div>-->
+        </main>
+        <script src="js/menu.js"></script>
+        <script src="js/fake_notif.js"></script>
+        <script src="js/profil.js"></script>
+    </body>
+</html>

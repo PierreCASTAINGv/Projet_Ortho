@@ -1,0 +1,73 @@
+html,body{
+    margin:0;padding:0;
+    height: 100%;width: 100%;
+}
+
+/*      discussion       */
+.container{
+    height: 100%;
+}
+main{
+    height: 80%;
+}
+main section{
+    margin-top:1%;
+    height: 85%;
+    width: 100%;
+    overflow-y: scroll;
+    border-bottom: 0.1em solid rgb(161, 161, 161) ;
+}
+
+article{
+    width: 59%;
+    padding:5px;
+    overflow-wrap: break-word;
+}
+.him{
+    border-radius:10px 10px 10px 0;
+    background-color: rgb(190, 190, 255);
+    margin:15px 0 0 5px ; 
+}
+.me{
+    border-radius:10px 10px 0 10px;
+    background-color: rgb(230, 248, 255);
+    margin:15px 15px 0 40%; 
+}
+
+
+/*    envoye de messages     */
+form{
+    background: white;
+    display: flex;
+    width: 100%;
+    border-radius: 200px; 
+}
+textarea{
+    width: 70%;
+    resize: none;
+    background: none;
+    border : none;
+    
+}
+.iconchat{
+    width: 10%;
+    border-radius: 200px; 
+    
+}
+.iconchat:first-child{
+    background: url("../src/icons/app_photo.png") no-repeat;
+    background-size: 80%;
+    background-position-y:40%; 
+}
+.iconchat:nth-child(2){
+    background: url("../src/icons/add.png") no-repeat;
+    background-size: 50%;
+    background-position-y:40%;
+    background-position-x:30%;
+}
+.iconchat:nth-child(4){
+    background: url("../src/icons/send.png") no-repeat;
+    background-size: 50%;
+    background-position-y:40%;
+    background-position-x:30%;
+}

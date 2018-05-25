@@ -1,0 +1,12 @@
+body{
+    background: rgba(128, 128, 128, 0.295);
+    margin-top:-20%;
+    height: 100%;
+}
+div{
+    margin:20% auto;
+    text-align: center;
+    background: black;
+    width: 100px;
+    height: 100px;;
+}
