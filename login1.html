@@ -12,9 +12,9 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/style_login2.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_login1.css" />
 		<script src="js/modernizr.custom.js"></script>
-
+		
 	</head>
 	<body>
 		<div class="container">
@@ -23,33 +23,20 @@
 					<span id="div_horloge"></span>
 				</p>
 				<section >
-					<div id="slider">
-				  <figure>
-					<img src="./img/img2.jpg" alt="docteur">
-					<img src="./img/img3.jpg" alt="docteur">
-					<img src="./img/img4.jpg" alt="docteur">
-					<img src="./img/img5.jpg" alt="docteur">
-					<img src="./img/img2.jpg" alt="">
-				  </figure>
-				</div>
-					<!--<p><img class="cercle" src="img/cabinet02.png" alt="orthalis"></p>-->
-					<p id="trendname"> Cabinet Ovantardi </p>
+					<p><img class="cercle" src="img/cercle.png" alt="orthalis"></p>
+					<p id="trendname"> Application Orthodontiste </p>
 					<!--form-->
 					<form  id="cabinet" type="POST" action="#">
-						<input type="text" placeholder="Code Client">
-						<input type="password" placeholder="Mot de passe">
-						<input id="checkb" type="checkbox" ><label>Mot de passe oublié? </label>
-						<input type="submit" value="Valider" onclick="document.location.href='accueil.html';">
-						
+						<input type="password" name="pass" ""placeholder="Code Cabinet">
+						<input type="submit" value="Valider" onclick="document.location.href='login2.html';"> 
 					</form><!--end form-->
-					
 				</section>
-				
 				<a href="profil.html"><div id="profilpic1" class="gn-icon-search"></div></a>
-				
+				<p> <a href="qrcode.html"><img id="Scan" src="img/qrcode.png" alt="QRcode"></a></p>
+				<p id="Qrcode">Flash Qr-code</p>
 				<p id="legal">POLITIQUE DE CONFIDENTIALITE</p>
 				<p id="legal1">TERMES ET CONDITIONS</p>
-				
+				<div id="snackbar">Some text some message..</div>
 			</header> 
 		</div><!-- /container -->
 <script>
@@ -65,13 +52,11 @@
   }
   actualiser();
   setInterval(actualiser,1000);
-}
-
+ }
 window.onload=function() {
   horloge('div_horloge');
   };
+ 
 </script>
-
-	
 	</body>
 </html>

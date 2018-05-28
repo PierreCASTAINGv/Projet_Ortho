@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Menu Global</title>
+		<meta name="description" content="Menu generique" />
+		<meta name="keywords" content="orthalis, orthondontiste, pau" />
+		<meta name="author" content="king''s" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		 <link rel="stylesheet" type="text/css" media="screen" href="css/style_chat2.css" />
+		 <link rel="stylesheet" href="css/font-awesome.min.css">
+		 
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="containerprofil">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<!--<input placeholder="Search" type="search" class="gn-search">-->
+									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
+									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
+									<a href="profil.html"><div id="nomprofil">Francois Géant</div></a>
+								</li>
+								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
+								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
+								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
+								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
+								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a class="cabinettitre" href="cabinet.html">CHAT : en ligne : François</a></li>
+			</ul>
+			<header id="monprofil">
+				<main>
+					<section>
+					<span class="tab"> - x</span>
+					<div class="ph1"><div id="interne">+</div></div> <!--Profil pic-->
+					<div class="ph2"><div id="interne2">+</div></div> <span class="fr">François</span><span class="dc">Doc. Frezz</span><!--Profil pic-->
+					<div class="patient1">
+						<label>François</label>
+						<p>Pourriez-vous me dire quand les douleurs cesseront ?</p>
+						<img src="" class="edit" >
+					</div>
+					<div class="doct">
+						<label>Doc Frezz</label>
+						<p>Il vous faudra attendre un peu.</p>
+						<img src="" class="edit" >
+					</div>
+					<div class="patient">
+						<label>François</label>
+						<p>Combien de temps?'</p>
+						<img src="" class="edit" >
+					</div>
+					<div class="patient">
+						<label>François</label>
+						<p>C'est très douloureux.'</p>
+					</div>
+					<div class="doct">
+						<label>Doc Frezz</label>
+						<p>Avez-vous pris les médicaments... </p>
+					</div>
+					<div class="patient">
+						<label>François</label>
+						<p>Comme sur la prescription ...</p>
+					</div>
+					
+					<div class="console">
+					<img src="src/icons/edit.png" class="edit" >
+					</div>
+					</section>
+            
+           
+				</main>
+			</header> 
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+		 <script src="js/profil.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
 </html>

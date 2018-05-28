@@ -12,14 +12,13 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/style_cabinet.css" />
-		<link rel="stylesheet" href="./fonts/font-awesome.min.css">
+		 <link rel="stylesheet" type="text/css" media="screen" href="css/style_monprofil.css" />
+		 <link rel="stylesheet" href="css/font-awesome.min.css">
+		 
 		<script src="js/modernizr.custom.js"></script>
-		
-
 	</head>
 	<body>
-		<div class="container">
+		<div class="containerprofil">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
@@ -29,8 +28,8 @@
 								<li class="gn-search-item">
 									<!--<input placeholder="Search" type="search" class="gn-search">-->
 									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
-									<a href="monprofil.html"><div id="profilpic" class="gn-icon-search"></div></a>
-									<a href="monprofil.html"><div id="nomprofil">Francois Géant</div></a>
+									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
+									<a href="profil.html"><div id="nomprofil">Francois Géant</div></a>
 								</li>
 								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
 								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
@@ -42,60 +41,60 @@
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li class="cabinettitre" ><a href="cabinet.html">LES CABINETS 2018</a></li>
+				<li><a class="cabinettitre" href="cabinet.html">PROFIL : François Géant</a></li>
 			</ul>
-			<header id="cabinet">
-				<div id="slider">
-				  <figure>
-					<img src="./img/img2.jpg" alt="docteur">
-					<img src="./img/img3.jpg" alt="docteur">
-					<img src="./img/img4.jpg" alt="docteur">
-					<img src="./img/img5.jpg" alt="docteur">
-					<img src="./img/img2.jpg" alt="">
-				  </figure>
-				</div>
-				<h1>CABINET ANDROZZ</h1>
-				<p><h2>Cabinet spécialisé dans la
-				chirurgie dentaire et l'estétisme réparatrice.      </h2> </p>
-				<p><h1>Composition du cabinet </h1> </p>
-				<br>
-				<div class="card">
-					  <img src="./img/dc1.jpg" alt="John" style="width:100%">
-					  <h1 id="doc">Doc Philipe Androzz</h1>
-					  <p class="title">CEO & Son's Founder</p>
-					  <br>
-					  <p>Paris University</p>
-					  <div style="margin: 24px 0;">
-						<a href="#"><i class="fa fa-dribbble"></i></a> 
-						<a href="#"><i class="fa fa-twitter"></i></a>  
-						<a href="#"><i class="fa fa-linkedin"></i></a>  
-						<a href="#"><i class="fa fa-facebook"></i></a> 
+			<header id="monprofil">
+				<main>
+					<section>
+					<div><div id="interne"">+</div></div><!--Profil pic-->
+					
+					<div onclick="edit(this)">
+						<label>Nom</label>
+						<p>Francois Géant</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Téléphone</label>
+						<p>06.09.98.34.XX</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Adresse</label>
+						<p>7 rue des feuilles mortes</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div>
+						<label>Premier Rendez-vous</label>
+						<p>07/08/2016</p>
+					</div>
+					<div>
+						<label>Praticien</label>
+						<p>Dr. Roger</p>
+					</div>
+					</section>
+            <div class="container">
+            <!--
+            pour les flèches
+            <p><</p>
+            <p>></p>-->
+					<div id="slider">
+							  <figure>
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+							   
+								<img src="./img/p1.jpg" alt="">
+								
+							  </figure>
 						</div>
-						<p><button>Contact</button></p>
-				</div>
-				<br>
-				<div class="card">
-					  <img src="./img/dc2.jpg" alt="John" style="width:100%">
-					  <h1>Doc Aniz Sales</h1>
-					  <p class="title">CEO & Prime Assistant</p>
-					  <br>
-					  <p>Lille University</p>
-					  <div style="margin: 24px 0;">
-						<a href="#"><i class="fa fa-dribbble"></i></a> 
-						<a href="#"><i class="fa fa-twitter"></i></a>  
-						<a href="#"><i class="fa fa-linkedin"></i></a>  
-						<a href="#"><i class="fa fa-facebook"></i></a> 
-						</div>
-						<p><button>Contact</button></p>
-				</div>
-				<div id="snackbar">Votre rappel rendez-vous<br> pour le 5 mars</div>
-				<br>
-				
+           
+				</main>
 			</header> 
-			
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
+		 <script src="js/profil.js"></script>
 		<script>
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>

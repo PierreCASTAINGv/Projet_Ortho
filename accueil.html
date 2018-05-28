@@ -1,77 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Orthalis Mobile 2018</title>
-    <meta name="description" content="application orthondontiste">
-    <meta name="author" content="The King Team">
-     <!--Mobile specific meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--css-->
-    <link rel="stylesheet" href="iosmodel.css">
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Menu Global</title>
+		<meta name="description" content="Menu generique" />
+		<meta name="keywords" content="orthalis, orthondontiste, pau" />
+		<meta name="author" content="king''s" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_accueil.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<!--<input placeholder="Search" type="search" class="gn-search">-->
+									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
+									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
+									<a href="monprofil.html"><div id="nomprofil">Francois Géant</div></a>
+								</li>
+								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
+								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
+								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
+								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
+								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a class="cabinettitre" href="cabinet.html">VOS RENDEZ-VOUS 2018</a></li>
+			</ul>
+			<header id="accueil">
+				<div id="slider">
+				  <figure>
+					<img src="./img/img2.jpg" alt="docteur">
+					<img src="./img/img3.jpg" alt="docteur">
+					<img src="./img/img4.jpg" alt="docteur">
+					<img src="./img/img5.jpg" alt="docteur">
+				   
+					<img src="./img/img2.jpg" alt="">
+					
+				  </figure>
+				</div>
+				
+				<h1>CABINET ANDROZZ</h1>
+					<h2>Mme Irène Fargot</h2>
+					<div class="accordeon">
+						<img src="./img/visage2.png" alt="portrait"> <span>Le 13 juin à 16H30</span>
+					</div>
+					<div class="content">
+						<img src="./img/dc1.jpg" alt="portrait">
+						<p>Avec le docteur Ekert</p>
+						<p>Pour la radiographie maxilaire</p>
+						<br>
+							<button class="badge1" data-badge="6">Urgent Téléphonez-moi!</button>
+					</div>
+					<div class="accordeon">
+						<img src="./img/visage2.png" alt="portrait"><span>Le 3 octobre à 16H30</span>
+					</div>
+					<div class="content">
+						<img src="./img/dc2.jpg" alt="portrait">
+						<p>Avec le docteur Strauss</p>
+						<p>Pour la pose d'un appareil</p>
+						<br>
+						<button class="badge1" data-badge="1">La nouvelle bague est arrivée</button>
+					</div>
+					<h2>Mme Sabrina Fargot</h2>
+					<div class="accordeon">
+						<img src="./img/visage3.png" alt="portrait"> <span>Le 21 novembre à 16H30</span>
+					</div>
+					<div class="content">
+						<img src="./img/dc4.jpg" alt="portrait">
+						<p>Avec le docteur sazless</p>
+						<p>Pour le contrôle mensuel de la</p>
+						<p>bague 12. et de la fixation sagital</p>
+					</div>	
+					<div id="snackbar"><button class="badge1" data-badge="6">Urgent Téléphonez-moi!<br> Dc Androzz</button></div>
+				
+			</header> 
+			
+		</div><!-- /container -->
+		 <script>
+    var slide = document.getElementsByClassName("accordeon");
+    var i;
     
-     <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"
- 
-</head>
-<body id="home">
-	<div class="trend">
-			 <h3>Orthalis Mobile Phone 2018</h3>
-	</div>
-     <div class="wrapper">
-	   <header class="carcasse">
-		   <div> <p id="design_header">p</p> </div>
-			<p id="ecran">
-				<section>
-					<p><img class="orta-ico" src="cercle.png" alt="orthalis"></p>
-					<p id="trendname">ORTHALIS MOBILE APPLICATION</p>
-					<p id="Bonjour">BIENVENUE</p>
-					<form  id="toto" type="POST" action="">
-						<input type="text" placeholder="numéro patient" required>
-						<input type="text" placeholder="mot de passe" required>
-						<input type="button" id="flip" value="VALIDER">				
-					</form><!--end form-->
-				</section>
-				<div id="div_horloge"></div>
-				<p id="legal">POLITIQUE DE CONFIDENTIALITE</p>
-				<p id="legal1">TERMES ET CONDITIONS</p>
-				<p class="nuages"></p>
-			</p><!--end ecran-->
-		    <h2 id="ipt">FIPT</h2>
-			<h2 id="ipt">(Final Interface Phone Test)</h2>
-	 </header><!--end header-->
-	</div><!--end wrapper-->
-	<footer class="team">
-		 <h3>kings' team</h3><br>
-		 <h4>Copyright 2018</h4>
-	</footer>
-<script type="text/javascript">
-window.onload=function() {
-  horloge('div_horloge');
-};
- 
-function horloge(el) {
-  if(typeof el=="string") { el = document.getElementById(el); }
-  function actualiser() {
-    var date = new Date();
-    var str = date.getHours();
-    str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
-    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
-    el.innerHTML = str;
-  }
-  actualiser();
-  setInterval(actualiser,1000);
+    for (i = 0; i < slide.length; i++) {
+      slide[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+       <script>
+		   window.onload=function() {
+  
+   setInterval(myFunction,10000);
+  };
+    function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
-</script>
-<script><!--DOM2-->
-	var form = document.getElementById("toto");
-	document.getElementById("flip").addEventListener("click", function () {
-    alert("ok");
-});
-</script>
-</body>
+   </script>
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
 </html>
