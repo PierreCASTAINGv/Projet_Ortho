@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#cabinet {
+	text-align:center;
+	margin:0px 0 0 0;
+	opacity: 1;
+	/*background:red;*/
+	z-index:10;
+}
+#cabinet h1 {
+    display: inline-block;
+	margin-bottom:10px;
+    font-size: 2em;
+    color:  rgb(106, 13, 134);
+    text-shadow: 4px 4px 16px rgba(102, 97, 97);
+}
+#cabinet h2 {
+    display: inline-block;
+     margin-bottom:10px;
+    
+    font-size: 1.4em;
+    color: white;/* #596E76;*/
+    text-shadow: 2px 2px 6px rgba(102, 97, 97,0.5);
+}
+#cabinet .content img {
+    width: 80px;
+    height:80px;
+    margin:5px;
+   /* padding: 4px;*/
+   /* border: 4px solid white; */
+    border-radius: 50%;
+    /*background: url('../img/dc1.jpg') no-repeat ;*/
+    box-shadow: 2px 2px 6px rgba(102, 97, 97);
+    
+}
+.gn-menu-main > li > a {
+	
+font-size:1.2em;
+}
+#cabinettitre {
+	padding-left:50px;
+	padding-top:20px;
+	margin:-5px;
+	
+}
+#nommenu {
+	padding-left:55px;
+}
+
+
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background:white;
+}
+
+div .card .title {
+  color: grey;
+  font-size: 1.7em;
+
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+div.card p {
+font-size:1.2em;
+	}
+.card .doc {
+	padding:5px;
+	text-shadow: 0px 0px 6px rgba(250, 250, 97,0.2);
+}	
+.container > header a {
+	color: black;
+		
+	}
+div a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+div#slider figure img { width: 20%; height: auto; float: left; }
+div#slider { margin: -15% 0 5% 9%; width: 80%; max-width: 1000px; overflow: hidden ;box-shadow: 2px 2px 6px rgba(102, 97, 97); }
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+  
+}
+.cabinettitre {
+margin: 0;
+    padding: 0;
+	margin-left:10%;
+}
