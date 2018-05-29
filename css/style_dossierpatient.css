@@ -5,7 +5,7 @@ body {
     color: rgb(218, 218, 218);
 }
 
-.divin {
+#divin {
     padding: 0;
     margin: 0;
     margin-top: 10vh;
@@ -72,7 +72,7 @@ body {
 .il {
     margin: 0;
     padding: 0;
-    padding-top: 0.6vh;
+    padding-top: 0.8vh;
     margin-top: 0.5vh;
     margin-bottom: 1vh;
     margin-left: 5vw;
@@ -125,16 +125,62 @@ body {
     display: none!important;
 }
 
-/*
-.divin > ul{
-    transition:all .3s ease-in-out;
-    height:0px;
-    visibility:hidden;
+.h {
+    display: none;
+    width: 90vw;
 }
-.divin h4{
-    margin:0;
+
+.detail {
+    margin: 0!important;
+    padding: 0!important;
+    padding-top: 0.6vh!important;
+    margin-top: 0.5vh!important;
+    margin-bottom: 1vh!important;
+    margin-left: 5vw!important;
+    width: 90vw!important;
+    height: 12vh!important;
+    text-align: center!important;
+    border-radius: 6px!important;
+    font-size: 1em!important;
+    background-color: rgba(7, 15, 37, 0.4)!important;
+    border-top: 3px solid rgba(255, 255, 255, 0.7)!important;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7)!important;
+    color: rgb(26, 30, 39)!important;
 }
-.visible{
-    height:200px;
+
+.h3 {
+    list-style-type: none!important;
+    padding: 0!important;
+    margin: 0!important;
+    margin-top: -0.5vh!important;
+    margin-bottom: -2.8vh!important;
+    padding-top: 3vh!important;
+    display: inline-block!important;
+    visibility: visible!important;
+    font-size: 0.9em!important;
 }
-*/
+/*  style pour les flèches de déplacement - à venir  
+
+.container p:nth-child(1), .container p:nth-child(2) {
+    padding: 18px 0 0 8px;
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    font-size: 1.4em;
+    color:white;
+    font-weight: bold;
+    border-radius: 8px;
+    background: rgba(86,114,93,0.7);
+    cursor: pointer;
+    z-index: 15;
+ }
+ .container p:nth-child(1) {
+     top: 45%;
+     left: 20px;
+  }
+ .container p:nth-child(2) {
+     top: 45%;
+     right: 20px;
+  }
+  /* fin */
+

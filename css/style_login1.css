@@ -53,7 +53,7 @@
 /*deco cercle a changer en CSS*/
 .cercle {
 position: absolute;
-	top: 7%;
+	top: 2%;
 	left: 32%;
     opacity: 1;
 }
@@ -115,7 +115,7 @@ p h3 {
 	font-weight: blod;
 	color: white;/*#61D6C4;*/
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	left:17%;
 	text-shadow:1px 1px 2px gray;
 }
@@ -188,13 +188,13 @@ input[type=button], input[type=submit], input[type=reset] {
 	
 	font-size: 1.9em;
     background-color: rgba(0,0,0,0);/*#61D6C4;*/
-    
+    text-shadow:1px 1px 2px gray;
     border: 2px solid #61D6C4;
     border-radius:25px;
     color: white;/*#61D6C4; /*#E7E7E7;*/
     padding: 6px 22px;
     text-decoration: none;
-    margin: 4px 20px;
+    margin: 3px 20px;
     cursor: pointer;
     width:90%;
     height:7%;
@@ -208,7 +208,7 @@ input[type=password]:focus {
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
     color:  white ;/*#8EFFEF;*/
     background-color: rgba(0,0,0,0);
-    box-shadow: 1px -1px 1px 1px #393156 inset;
+    box-shadow: 5px -3px 16px 1px #99A2AB;
     text-shadow:1px 1px 1px gray;
 }
 /* notif CSS*/
