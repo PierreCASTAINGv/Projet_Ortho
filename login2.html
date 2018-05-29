@@ -38,8 +38,9 @@
 					<form  id="cabinet" type="POST" action="#">
 						<input type="text" placeholder="Code Client">
 						<input type="password" placeholder="Mot de passe">
-						<input id="checkb" type="checkbox" ><label>Mot de passe oublié? </label>
-						<input type="submit" value="Valider" onclick="document.location.href='accueil.html';">
+						
+						<a href="#"><label>Mot de passe oublié? </label><span>Téléphonez au 06.25.31.48</span> </a>
+						<input type="button" value="Valider" onclick="mdp()">
 						
 					</form><!--end form-->
 					
@@ -49,27 +50,27 @@
 				
 				<p id="legal">POLITIQUE DE CONFIDENTIALITE</p>
 				<p id="legal1">TERMES ET CONDITIONS</p>
-				
+				<div id="snackbar">Some text some message..</div>
 			</header> 
 		</div><!-- /container -->
 <script>
-	function horloge(el) {
-		if(typeof el=="string") { el = document.getElementById(el); }
-	function actualiser() {
-	var date = new Date();
-	var str = date.getHours();
-	str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
-    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
-    el.innerHTML = str + "    PM " + " 25 %";
-    el.style.color = 'grey';
-  }
-  actualiser();
-  setInterval(actualiser,1000);
-}
-
-window.onload=function() {
-  horloge('div_horloge');
-  };
+	
+  
+  function mdp(){
+		let correctcode = "B111" ;
+		let correctmdp = "C111" ;
+		let code = document.querySelector("input[type=text]");
+		let mdp = document.querySelector("input[type=password]");
+		if (code.value == correctcode && mdp.value == correctmdp){
+			document.querySelector("input[type=button]").onclick = window.location.assign("accueil.html");;
+		}
+		else{
+			let x = document.querySelector("#snackbar");
+			x.className = "show";
+			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			mdp.value = "";
+		}
+	}
 </script>
 
 	

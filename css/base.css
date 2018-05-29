@@ -37,7 +37,7 @@ body {
 }
 /*pour le survol bien qu'avec le tel pas possible, donc, click*/
 .container > header a:hover {
-	color: #4f7bab;
+
 }
 
 .container > header h1 {

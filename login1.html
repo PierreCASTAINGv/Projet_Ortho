@@ -19,16 +19,14 @@
 	<body>
 		<div class="container">
 			<header id="login1">
-				<p id="connect"> 
-					<span id="div_horloge"></span>
-				</p>
+				
 				<section >
 					<p><img class="cercle" src="img/cercle.png" alt="orthalis"></p>
 					<p id="trendname"> Application Orthodontiste </p>
 					<!--form-->
 					<form  id="cabinet" type="POST" action="#">
-						<input type="password" name="pass" ""placeholder="Code Cabinet">
-						<input type="submit" value="Valider" onclick="document.location.href='login2.html';"> 
+						<input type="password" name="pass" placeholder="Code Cabinet">
+						<input type="button" value="Valider" onclick="mdp()"> 
 					</form><!--end form-->
 				</section>
 				<a href="profil.html"><div id="profilpic1" class="gn-icon-search"></div></a>
@@ -40,23 +38,19 @@
 			</header> 
 		</div><!-- /container -->
 <script>
-	function horloge(el) {
-		if(typeof el=="string") { el = document.getElementById(el); }
-	function actualiser() {
-	var date = new Date();
-	var str = date.getHours();
-	str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
-    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
-    el.innerHTML = str + "    PM " + " 25 %";
-    el.style.color = 'grey';
-  }
-  actualiser();
-  setInterval(actualiser,1000);
- }
-window.onload=function() {
-  horloge('div_horloge');
-  };
- 
+function mdp(){
+		let correct = "A111" ;
+		let valid = document.querySelector("input[type=password]");
+		if (valid.value == correct){
+			document.querySelector("input[type=button]").onclick = window.location.assign("login2.html");;
+		}
+		else{
+			let x = document.querySelector("#snackbar");
+			x.className = "show";
+			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			valid.value = "";
+		}
+	}
 </script>
 	</body>
 </html>

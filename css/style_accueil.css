@@ -4,14 +4,14 @@
 }
 #accueil {
 	text-align:center;
-	margin:60px 0 0 0;
+	margin: 50px 0 0 0;
 	opacity: 1;
 	/*background:red;*/
 	z-index:10;
 }
 #accueil h1 {
     display: inline-block;
-	margin-bottom:10px;
+	margin-bottom:30px;
     font-size: 2em;
     color:  rgb(106, 13, 134);
     text-shadow: 4px 4px 16px rgba(102, 97, 97);
@@ -60,7 +60,7 @@
 }
 
 #accueil .active, .accordeon:hover {
-    background: rgba(88,73,110,0.3);
+    /*background: rgba(88,73,110,0.3);*/
     
 }
 
@@ -72,6 +72,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background: rgba(200, 206, 200, 0.5);
+    text-align: center;
 
 }
 #accueil .content p {
@@ -81,16 +82,21 @@
     font-size:1.2em;
 }
 #accueil .accordeon:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: "+"; /* Unicode character for "plus" sign (+) */
     font-size: 24px;
-    color: rgb(255, 38, 244);
+    color: #602C57 ; /*rgb(255, 38, 244);*/
     float: right;
     margin-right: 22px;
-    margin-top:18px;
+    margin-top:12px;
 }
 
 #accueil .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "-"; /* Unicode character for "plus" sign (+) */
+    font-size: 36px;
+    color: #602C57 ; /*rgb(255, 38, 244);*/
+    float: right;
+    margin-right: 22px;
+    margin-top:8px;
 }
 .accordeon {
     margin: 0 0 15px;
@@ -104,12 +110,12 @@
 	position:absolute;
     color: #8C959E255;
     font-size:.8em;
-    padding: 25px 0 0 85px;
+    padding: 17px 0 0 85px;
 }
 #accueil .accordeon img {
     width: 40px;
     height: 40px;
-    top: 12px;
+    top: 7px;
     left: 20px;
     position: absolute;
     border-radius: 50%;
@@ -128,7 +134,7 @@
 }
 
 div#slider figure img { width: 20%; height: auto; float: left; }
-div#slider { margin: -35% 0 5% 9%; width: 80%; max-width: 1000px; overflow: hidden ;box-shadow: 2px 2px 6px rgba(102, 97, 97); }
+div#slider { position: relative;margin: -42% 0 5% -11%; width: 120%; max-width: 1000px; overflow: hidden ;box-shadow: 2px 2px 6px rgba(102, 97, 97); }
 div#slider figure:hover { animation-play-state:paused; }
 
 #slider:after {
@@ -141,11 +147,11 @@ div#slider figure:hover { animation-play-state:paused; }
 	transition: 1s all ease-in-out;
 }
 #slider:hover:after {
-	color: rgba(255,255,255, 0.8);
+/*	color: rgba(255,255,255, 0.8);*/
 }
 
 @keyframes slidy {
-  0% { left: 0%; }
+  0%  { left: 0%; }
   20% { left: 0%; }
   25% { left: -100%; }
   45% { left: -100%; }
