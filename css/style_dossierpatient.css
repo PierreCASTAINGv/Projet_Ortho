@@ -1,0 +1,125 @@
+#dossierpatient {
+	opacity:1;
+}
+main {
+	opacity:1;
+	font-size:.8em;
+}
+main section div{/* formulaire */
+    background: rgba(223, 223, 223,1);
+    border-radius: 10px;
+    box-shadow: 5px -5px 12px #C9C7CC;
+    height: 8%; 
+    width:75%;
+    min-height: 35px;
+    margin:5% 0 0 12%;
+    padding-left:10%;
+    
+    position: relative;
+}
+main section div:first-child{/* image de profil */
+    background: url("../src/profil.jpeg") no-repeat; 
+    background-size: cover;
+    border:0.4em white solid ;
+    border-radius: 100px;
+    box-shadow: none;
+    margin: auto;
+    margin-top: 5%;
+    padding:0%;
+    position: relative;
+    width: 100px;height: 100px;
+}
+#nommenu {
+	padding-left:55px;
+}
+@media screen and (min-width: 600px){
+    main div:first-child{
+        margin-top: -10%;
+    }
+}
+main section div:nth-child(2){
+    margin-top: 10%;
+}
+label{
+    color:gray;
+    font-size: 0.9em;
+}
+p{
+    margin:0.5%;
+}
+main section div img {/* crayons edit */
+    position: absolute;
+    top:35%;right: 5%;
+    width: 6%;
+}
+/* ------------------------------------------------------*/
+@media screen and (max-width: 700px) {
+
+ .containerprofil {
+    position: relative;
+    width: 300px;   /* = la taille des images */
+    height: 120%;
+    /*overflow: hidden;  /* évite de dévoiler les images */
+    margin: 15% auto 0;
+    border: 2px solid rgba(114, 107, 107,0.2);
+    box-shadow: 2px 2px 12px rgba(102, 97, 97,.2);
+    border-radius: 20px;
+    
+}
+
+
+}
+
+
+div#slider figure img { width: 20%; height: auto; float: left; }
+div#slider { margin: 7% 0 5% 9%; width: 80%; max-width: 1000px; overflow: hidden ;box-shadow: 2px 2px 6px rgba(102, 97, 97); }
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+  
+}
+
+
+/*  style pour les flèches de déplacement - à venir  
+
+.container p:nth-child(1), .container p:nth-child(2) {
+    padding: 18px 0 0 8px;
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    font-size: 1.4em;
+    color:white;
+    font-weight: bold;
+    border-radius: 8px;
+    background: rgba(86,114,93,0.7);
+    cursor: pointer;
+    z-index: 15;
+ }
+ .container p:nth-child(1) {
+     top: 45%;
+     left: 20px;
+  }
+ .container p:nth-child(2) {
+     top: 45%;
+     right: 20px;
+  }
+  /* fin */
+

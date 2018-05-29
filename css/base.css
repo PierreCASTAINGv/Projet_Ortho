@@ -12,14 +12,14 @@
 /*style de la page au niveau couleur ou image*/
 body {
 	/*background: #34495e;*/
-	background: url('../img/fond2256-1284-2.png');
+	background: url('../img/fond2256-1284-3.png');
 	background-repeat: no-repeat;
 }
 
 /*niveau container et ses éléments couleur & fonts*/
 .container > header,
 .codrops-top {
-	color: #fff;
+	/*color: #fff;*/
 	font-family: 'Lato', Arial, sans-serif;
 }
 /*niveau container et header ajoute une nuance dans le background*/
@@ -37,7 +37,7 @@ body {
 }
 /*pour le survol bien qu'avec le tel pas possible, donc, click*/
 .container > header a:hover {
-	color: #4f7bab;
+
 }
 
 .container > header h1 {
@@ -85,7 +85,7 @@ body {
 }
 /*on fait dispariatre le menu*/
 .smenu {
-	opacity:0;
+	visibility:none;
 }
 
 }
@@ -93,6 +93,6 @@ body {
 @media screen and (max-width: 740px) {
 /*on fait dispariatre le menu*/
 .smenu {
-opacity:0;
+
 }
 }

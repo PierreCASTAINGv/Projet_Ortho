@@ -12,47 +12,122 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_cabinet.css" />
+		<link rel="stylesheet" href="./fonts/font-awesome.min.css">
 		<script src="js/modernizr.custom.js"></script>
+		
+
 	</head>
 	<body>
 		<div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
 							<ul class="gn-menu">
 								<li class="gn-search-item">
-									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+									<!--<input placeholder="Search" type="search" class="gn-search">-->
+									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
+									<a href="monprofil.html"><div id="profilpic" class="gn-icon-search"></div></a>
+									<a href="monprofil.html"><div id="nomprofil">Francois Géant</div></a>
 								</li>
-								<li><a class="gn-icon gn-icon-dossier" href="accueil.html">Accueil</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="cabinet.html">Cabinet</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html">Dossier Patient</a></li>
-								<li><a class="gn-icon gn-icon-profil" href="monprofil.html">Mon Profil</a></li>
-								<li><a class="gn-icon gn-icon-chat" href="chat.html">Chat</a></li>
-								<li><a class="gn-icon gn-icon-parametre" href="parametres.html">Paramètre</a></li>
+								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
+								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
+								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
+								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
+								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
 							</ul>
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li class="smenu"><a href="#">Orthalis</a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="accueil.html"><span>Acceuil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="cabinet.html"><span>Cabinet</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="dossierpatient.html"><span>Dossier Patient</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="monprofil.html"><span>Mon Profil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="chat.html"><span>Chat</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="parametres.html"><span>Paramètres</span></a></li>
-				
+				<li class="cabinettitre" ><a href="cabinet.html">LES CABINETS 2018</a></li>
 			</ul>
-			<header>
-				<h1>Container page <strong> CABINET </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
+			<header id="cabinet">
+				<div id="slider">
+				  <figure>
+					<img src="./img/img2.jpg" alt="docteur">
+					<img src="./img/img3.jpg" alt="docteur">
+					<img src="./img/img4.jpg" alt="docteur">
+					<img src="./img/img5.jpg" alt="docteur">
+					<img src="./img/img2.jpg" alt="">
+				  </figure>
+				</div>
+				<h1>HORAIRES</h1>
+					<div class="accordeon2">
+						<img src="./fonts/png/alarm.png" alt="alarm"> <span>Le 13 juin à 16H30</span>
+					</div>
+					<div class="content">
+						<p> Lundi 10 h a 20 h</p>
+						<p> Mardi 10 h a 20 h</p>
+						<p> Mercredi 10 h a 20 h</p>
+						<p> Jeudi 10 h a 20 h</p>						
+						<p> vendredi 10 h a 20 h</p>
+						<p> samedi 10 h a 20 h</p>						
+					</div>
+				
+					<div class="accordeon2">
+						<img src="./fonts/png/location.png" alt="alarm"> <span><a href="googlemap.html" >Google maps location</a></span>
+					</div>
+					<div class="content">
+						<img id="gm" src="./img/gm.png" alt="alarm"> 
+					</div>
+					<div class="accordeon2">
+						<img src="./fonts/png/phone.png" alt="alarm"> <span>06.12.35.48.59</span>
+					</div>
+					<div class="content">
+						<p> Doc1 : 06.23.54.89.26</p>
+						<p> Doc1 : 06.23.54.89.26</p>
+						<p> Doc1 : 06.23.54.89.26</p>
+						<p> Doc1 : 06.23.54.89.26</p>
+						<p> Doc1 : 06.23.54.89.26</p>
+					</div>
+					<div class="accordeon2">
+						<img src="./fonts/png/file-empty.png" alt="alarm"> <span>ordpzz@gmail.com</span>
+					</div>
+				<div class="content">
+						<p> Lundi 10 h a 20 h</p>
+						<p> Mardi 10 h a 20 h</p>
+						<p> Mercredi 10 h a 20 h</p>
+						<p> Jeudi 10 h a 20 h</p>						
+						<p> vendredi 10 h a 20 h</p>
+						<p> samedi 10 h a 20 h</p>						
+					</div>
+				
+				
+				<p><h2>Cabinet spécialisé dans la
+				chirurgie dentaire et l'estétisme réparatrice.   </h2> </p>
+				<p><a href="compositioncab.html"><h1>Composition du cabinet </h1></a> </p>
+				
+				
+				<div id="snackbar">Votre rappel rendez-vous<br> pour le 5 mars</div>
+				<br>
+				
 			</header> 
+			
 		</div><!-- /container -->
+		
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
 		<script>
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>
+		<script>
+    var slide = document.getElementsByClassName("accordeon2");
+    var i;
+    
+    for (i = 0; i < slide.length; i++) {
+        slide[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+ </script>
 	</body>
 </html>

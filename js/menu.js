@@ -42,8 +42,11 @@
 			var self = this;
 
 			if( !mobilecheck() ) {
+				/*ma modif pour gérer la visibilité*/
+				
 				this.trigger.addEventListener( 'mouseover', function(ev) { self._openIconMenu(); } );
 				this.trigger.addEventListener( 'mouseout', function(ev) { self._closeIconMenu(); } );
+			
 			
 				this.menu.addEventListener( 'mouseover', function(ev) {
 					self._openMenu(); 
@@ -55,9 +58,33 @@
 				ev.preventDefault();
 				if( self.isMenuOpen ) {
 					self._closeMenu();
+					if( document.querySelector('#accueil'))
+						document.querySelector('#accueil').style.opacity ="1";
+					if( document.querySelector('#chat'))
+						document.querySelector('#chat').style.opacity ="1";
+					if( document.querySelector('#parametres'))
+						document.querySelector('#parametres').style.opacity ="1";
+					if( document.querySelector('#dossierpatient'))
+						document.querySelector('#dossierpatient').style.opacity ="1";
+					if( document.querySelector('#cabinet'))
+						document.querySelector('#cabinet').style.opacity ="1";
+					if( document.querySelector('#monprofil'))
+						document.querySelector('#monprofil').style.opacity ="1";
 					document.removeEventListener( self.eventtype, self.bodyClickFn );
 				}
 				else {
+					if( document.querySelector('#accueil'))
+						document.querySelector('#accueil').style.opacity ="0";
+					if( document.querySelector('#chat'))
+						document.querySelector('#chat').style.opacity ="0";
+					if( document.querySelector('#parametres'))
+						document.querySelector('#parametres').style.opacity ="0";
+					if( document.querySelector('#dossierpatient'))
+						document.querySelector('#dossierpatient').style.opacity ="0";
+					if( document.querySelector('#cabinet'))
+						document.querySelector('#cabinet').style.opacity ="0";
+					if( document.querySelector('#monprofil'))
+						document.querySelector('#monprofil').style.opacity ="0";
 					self._openMenu();
 					document.addEventListener( self.eventtype, self.bodyClickFn );
 				}

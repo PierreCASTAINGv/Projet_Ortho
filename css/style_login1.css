@@ -1,160 +1,256 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-body {
-	/* si on veut utiliser une couleur de fond 	background: #34495e;*/
-	/* si on veut utiliser un dégradé 			background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);*/
-	background-image: url('../img/fond2256-1284.png');
-	background-repeat:no-repeat;
-}
-
-.container > header,
-.codrops-top {
-	/*color: #fff;*/
-	font-family: 'Lato', Arial, sans-serif;
-}
-
-/*niveau container et header ajoute une nuance dans le background*/
-.container > header {
-	margin: 0 auto;
-	padding: 12em 2em;
-	padding-left: 370px;
-/*	background: rgba(0,0,0,0.05); ici*/
-}
-.container > header a {
-	color: #566473;
-	text-decoration: none;
-	outline: none;
-}
-
-.container > header a:hover {
-	color: #4f7bab;
-}
-
-.container > header h1 {
-	font-size: 3.2em;
-	line-height: 1.3;
+* {
 	margin: 0;
-	font-weight: 300;
-}
-
-.container > header span {
-	display: block;
-	font-size: 55%;
-	color: #74818e;
-	padding: 0 0 0.6em 0.1em;
-}
-.intitule-cabinet {
- padding-left: 25%;
-}
-/* To Navigation Style */
-.codrops-top {
-	background: #fff;
-	/*background: rgba(255, 255, 255, 0.6);*/
-	text-transform: uppercase;
-	width: 100%;
-	font-size: 0.69em;
-	line-height: 2.2;
-}
-
-.codrops-top a {
-	text-decoration: none;
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
-}
-
-.codrops-top a:hover {
-	/*background: rgba(255,255,255,0.95);*/
-	color: #333;
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
-	float: left;
-	display: block;
-}
-
-.codrops-icon:before {
-	font-family: 'codropsicons';
-	margin: 0 4px;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-drop:before {
-	content: "\e001";
-}
-
-.codrops-icon-prev:before {
-	content: "\e004";
-}
-
-/* Demo Buttons Style */
-.codrops-demos {
-	padding-top: 1em;
-	font-size: 0.9em;
-}
-
-.codrops-demos a {
-	text-decoration: none;
-	outline: none;
-	display: inline-block;
-	margin: 0.5em;
-	padding: 0.7em 1.1em;
-	border: 3px solid #b1aea6;
-	color: #b1aea6;
-	font-weight: 700;
-}
-
-.codrops-demos a:hover,
-.codrops-demos a.current-demo,
-.codrops-demos a.current-demo:hover {
-	border-color: #89867e;
-	color: #89867e;
-}
-section {
 	padding: 0;
+}
+.container {
+	position:relative;
+	/*background:red;*/
+	color:white;
 	margin: 0;
-}
-
-p {
-  color:white;
-  font-size: 1.2em;
-}
-@media screen and (max-width: 1025px) {
-	.container > header {
-		margin: 0 auto;
-		padding: 120px 50px;
-		font-size: 70%;
-		text-align: right;
-	}
+	padding: 0;
 
 	
+	
+}
+.container header {
+	
+}
+#login1 {
+	position:absolute;
+	top:0%;
+	left: 0%;
+	/*background:blue;*/
+	width:100vw;
+	height:100vh;
+	color:white;
+	overflow:hidden;
+}
+/*simulation tab en haut*/
+#connect {
+	position:absolute;
+	top:0%;
+	left:0%;
+	color:white;
+	background:black;
+	font-family: sans-serif;
+	font-size: .8em;
+	width:150%;
+	height:25px;
+	color:white;
+	
+}
+#div_horloge {
+	position: absolute;
+	top: 0%;
+	left:3%;
+	padding-top:3px;
+	font-size: .8em;
+	font-family: sans-serif;
+	font-weight: blod;
+	color:white;
 }
 
-@media screen and (max-width: 740px) {
+/*deco cercle a changer en CSS*/
+.cercle {
+position: absolute;
+	top: 2%;
+	left: 32%;
+    opacity: 1;
+}
 
-	.codrops-icon span {
-		display: none;
-	}
+#Qrcode {
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: blod;
+	color: rgba(250,250,250,1);
 	
+	position: absolute;
+	top:86%;
+	left:35%;
+}
+
+#legal {
+	position: absolute;
+	top:95%;
+	left:25%;
+	
+	font-size: .9em;
+	font-family: sans-serif;
+	font-weight: blod;
+	color: rgba(250,250,250,1);
+	padding-bottom: -20px;
+}
+#legal1 {
+	position: absolute;
+	padding-bottom: -20px;
+	top:97%;
+	left:31%;
+	font-size: .9em;
+	font-family: sans-serif;
+	font-weight: blod;
+
+	color: rgba(250,250,250,1);
+}
+#div_horloge {
+	position:absolue;
+	top:-2px;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: blod;
+	color: blue;/*rgba(230,250,230,1);*/
+	z-index:50;
+}
+/*horloge*/
+span {
+	margin-left:120px;
+	margin-right:80px;
+}
+
+p h3 {
+	display:inline;
+}
+#trendname {
+	font-size: 1.7em;
+	font-family: sans-serif;
+	font-weight: blod;
+	color: white;/*#61D6C4;*/
+	position: absolute;
+	top: 20%;
+	left:17%;
+	text-shadow:1px 1px 2px gray;
+}
+#Scan {
+	position: absolute;
+	top:73%;
+	left:37%;
+	opacity:.7;
+	z-index:80;
+	
+}
+/*-------------------------------FORM--------------------------------------------*/
+/*-------------------------------FORM--------------------------------------------*/
+form {
+	margin: 0;
+    padding: 0;
+	position: absolute;
+	left: 16%;
+	top:20%;
+	width: 250px;
+	height: 550px;
+	/*background:red;*/
+}
+input[type=password] {
+	position: absolute;
+	top: 32%;
+	left: -12%;
+    width: 80%;
+    height:7%;
+    border: 0px solid rgba(2,79,81,0);
+    border-bottom: 2px solid  #61D6C4;
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,0);
+    background-position: 20px 20px; 
+    background-repeat: no-repeat;
+    margin-left: 25%;
+   /* padding: 12px 100px 2px 57px;*/
+    color:black;
+    transition: width 0.4s ease-in-out;
+}
+input[type=password]:focus {
+	color:  white ;/*#8EFFEF;*/
+    background-color: rgba(0,0,0,0);
+    
+}
+/*avec animation*/
+input[type=text] {
+	
+    width: 100px;
+    border: 0px solid rgba(2,79,81,0);
+    border-bottom: 2px solid #ccc;
+    font-size: 1em;
+    background-color: rgba(255,255,255,0);
+    background-position: 20px 20px; 
+    background-repeat: no-repeat;
+    margin-left: 75px;
+    padding: 12px 100px 2px 7px;
+    color:#E4E4E4;
+    
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	position:absolute;
+	top: 45%;
+	left: -1%;
+	
+	font-size: 1.9em;
+    background-color: rgba(0,0,0,0);/*#61D6C4;*/
+    text-shadow:1px 1px 2px gray;
+    border: 2px solid #61D6C4;
+    border-radius:25px;
+    color: white;/*#61D6C4; /*#E7E7E7;*/
+    padding: 6px 22px;
+    text-decoration: none;
+    margin: 3px 20px;
+    cursor: pointer;
+    width:90%;
+    height:7%;
+    /*box-shadow: 1px 1px 1px 1px #393156 inset;*/
+    z-index: 50;
+    
+}
+input[type=password]:focus {
+    width: 105%;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    color:  white ;/*#8EFFEF;*/
+    background-color: rgba(0,0,0,0);
+    box-shadow: 5px -3px 16px 1px #99A2AB;
+    text-shadow:1px 1px 1px gray;
+}
+/* notif CSS*/
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }

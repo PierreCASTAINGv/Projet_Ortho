@@ -12,47 +12,67 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_login2.css" />
 		<script src="js/modernizr.custom.js"></script>
+
 	</head>
 	<body>
 		<div class="container">
-			<ul id="gn-menu" class="gn-menu-main">
-				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-					<nav class="gn-menu-wrapper">
-						<div class="gn-scroller">
-							<ul class="gn-menu">
-								<li class="gn-search-item">
-									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
-								</li>
-								<li><a class="gn-icon gn-icon-dossier" href="accueil.html">Accueil</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="cabinet.html">Cabinet</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html">Dossier Patient</a></li>
-								<li><a class="gn-icon gn-icon-profil" href="monprofil.html">Mon Profil</a></li>
-								<li><a class="gn-icon gn-icon-chat" href="chat.html">Chat</a></li>
-								<li><a class="gn-icon gn-icon-parametre" href="parametres.html">Paramètre</a></li>
-							</ul>
-						</div><!-- /gn-scroller -->
-					</nav>
-				</li>
-				<li class="smenu"><a href="#">Orthalis</a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="accueil.html"><span>Acceuil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="cabinet.html"><span>Cabinet</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="dossierpatient.html"><span>Dossier Patient</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="monprofil.html"><span>Mon Profil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="chat.html"><span>Chat</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="parametres.html"><span>Paramètres</span></a></li>
+			<header id="login1">
+				<p id="connect"> 
+					<span id="div_horloge"></span>
+				</p>
+				<section >
+					<div id="slider">
+				  <figure>
+					<img src="./img/img2.jpg" alt="docteur">
+					<img src="./img/img3.jpg" alt="docteur">
+					<img src="./img/img4.jpg" alt="docteur">
+					<img src="./img/img5.jpg" alt="docteur">
+					<img src="./img/img2.jpg" alt="">
+				  </figure>
+				</div>
+					<!--<p><img class="cercle" src="img/cabinet02.png" alt="orthalis"></p>-->
+					<p id="trendname"> Cabinet Ovantardi </p>
+					<!--form-->
+					<form  id="cabinet" type="POST" action="#">
+						<input type="text" placeholder="Code Client">
+						<input type="password" placeholder="Mot de passe">
+						
+						<a href="#"><label>Mot de passe oublié? </label><span>Téléphonez au 06.25.31.48</span> </a>
+						<input type="button" value="Valider" onclick="mdp()">
+						
+					</form><!--end form-->
+					
+				</section>
 				
-			</ul>
-			<header>
-				<h1>Container page <strong> ACCUEIL </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
+				<a href="profil.html"><div id="profilpic1" class="gn-icon-search"></div></a>
+				
+				<p id="legal">POLITIQUE DE CONFIDENTIALITE</p>
+				<p id="legal1">TERMES ET CONDITIONS</p>
+				<div id="snackbar">Some text some message..</div>
 			</header> 
 		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-		<script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
+<script>
+	
+  
+  function mdp(){
+		let correctcode = "B111" ;
+		let correctmdp = "C111" ;
+		let code = document.querySelector("input[type=text]");
+		let mdp = document.querySelector("input[type=password]");
+		if (code.value == correctcode && mdp.value == correctmdp){
+			document.querySelector("input[type=button]").onclick = window.location.assign("accueil.html");;
+		}
+		else{
+			let x = document.querySelector("#snackbar");
+			x.className = "show";
+			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			mdp.value = "";
+		}
+	}
+</script>
+
+	
 	</body>
 </html>

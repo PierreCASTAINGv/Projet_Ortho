@@ -12,45 +12,89 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		 <link rel="stylesheet" type="text/css" media="screen" href="css/style_monprofil.css" />
+		 <link rel="stylesheet" href="css/font-awesome.min.css">
+		 
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="containerprofil">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
 							<ul class="gn-menu">
 								<li class="gn-search-item">
-									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+									<!--<input placeholder="Search" type="search" class="gn-search">-->
+									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
+									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
+									<a href="profil.html"><div id="nomprofil">Francois Géant</div></a>
 								</li>
-								<li><a class="gn-icon gn-icon-dossier" href="accueil.html">Accueil</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="cabinet.html">Cabinet</a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html">Dossier Patient</a></li>
-								<li><a class="gn-icon gn-icon-profil" href="monprofil.html">Mon Profil</a></li>
-								<li><a class="gn-icon gn-icon-chat" href="chat.html">Chat</a></li>
-								<li><a class="gn-icon gn-icon-parametre" href="parametres.html">Paramètre</a></li>
+								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
+								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
+								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
+								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
+								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
+								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
 							</ul>
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li class="smenu"><a href="#">Orthalis</a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="accueil.html"><span>Acceuil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="cabinet.html"><span>Cabinet</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="dossierpatient.html"><span>Dossier Patient</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="monprofil.html"><span>Mon Profil</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="chat.html"><span>Chat</span></a></li>
-				<li class="smenu"><a class="codrops-icon codrops-icon-prev" href="parametres.html"><span>Paramètres</span></a></li>
-				
+				<li><a class="cabinettitre" href="cabinet.html">PROFIL : François Géant</a></li>
 			</ul>
-			<header>
-				<h1>Container page <strong> MON PROFIL </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
+			<header id="monprofil">
+				<main>
+					<section>
+					<div><div id="interne"">+</div></div><!--Profil pic-->
+					
+					<div onclick="edit(this)">
+						<label>Nom</label>
+						<p>Francois Géant</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Téléphone</label>
+						<p>06.09.98.34.XX</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Adresse</label>
+						<p>7 rue des feuilles mortes</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div>
+						<label>Premier Rendez-vous</label>
+						<p>07/08/2016</p>
+					</div>
+					<div>
+						<label>Praticien</label>
+						<p>Dr. Roger</p>
+					</div>
+					</section>
+            <div class="container">
+            <!--
+            pour les flèches
+            <p><</p>
+            <p>></p>-->
+					<div id="slider">
+							  <figure>
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+							   
+								<img src="./img/p1.jpg" alt="">
+								
+							  </figure>
+						</div>
+           
+				</main>
 			</header> 
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
+		 <script src="js/profil.js"></script>
 		<script>
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>
