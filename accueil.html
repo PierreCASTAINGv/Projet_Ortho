@@ -27,7 +27,7 @@
 									<!--<input placeholder="Search" type="search" class="gn-search">-->
 									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
 									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
-									<a href="monprofil.html"><div id="nomprofil">Francois Géant</div></a>
+									<a href="#"><div id="nomprofil">Francois Géant</div></a>
 								</li>
 								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
 								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
@@ -55,6 +55,7 @@
 				</div>
 				
 				<h1>CABINET ANDROZZ</h1>
+
 					<h2>Mme Irène Fargot</h2>
 					<div class="accordeon">
 						<img src="./img/visage2.png" alt="portrait"> <span>Le 13 juin à 16H30</span>
@@ -64,7 +65,7 @@
 						<p>Avec le docteur Ekert</p>
 						<p>Pour la radiographie maxilaire</p>
 						<br>
-							<button class="badge1" data-badge="6">Urgent Téléphonez-moi!</button>
+							<button class="badge1" data-badge="2">le traitement est arrivé!</button>
 					</div>
 					<div class="accordeon">
 						<img src="./img/visage2.png" alt="portrait"><span>Le 3 octobre à 16H30</span>
@@ -86,17 +87,19 @@
 						<p>Pour le contrôle mensuel de la</p>
 						<p>bague 12. et de la fixation sagital</p>
 					</div>	
+
 					<div id="snackbar"><button class="badge1" data-badge="6">Urgent Téléphonez-moi!<br> Dc Androzz</button></div>
 				
 			</header> 
 			
 		</div><!-- /container -->
-		 <script>
+
+<script>
     var slide = document.getElementsByClassName("accordeon");
     var i;
     
     for (i = 0; i < slide.length; i++) {
-      slide[i].addEventListener("click", function() {
+        slide[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight){
@@ -106,22 +109,22 @@
         } 
       });
     }
-    </script>
-       <script>
-		   window.onload=function() {
-  
-   setInterval(myFunction,10000);
-  };
+ </script>
+ <script>
+	   window.onload=function() {
+       setInterval(myFunction,10000);
+    };
+    
     function myFunction() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-   </script>
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-		<script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
+		var x = document.getElementById("snackbar");
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+ </script>
+ <script src="js/classie.js"></script>
+ <script src="js/menu.js"></script>
+ <script>
+	new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
 	</body>
 </html>
