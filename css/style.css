@@ -1,0 +1,41 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+body {
+    background: url('../img/fond2256-1284-3.png');
+	background-repeat: no-repeat;
+}
+
+.sidenav .user-view {
+  position: relative;
+  padding: 32px 32px 0;
+  margin-bottom: 8px;
+  text-align:center;
+}
+.circle {
+	margin:0 0 0 60px;
+	height: 128px!important;
+	width: 128px!important;
+}
+.sidenav {
+	background: linear-gradient(#95D8CA, rgba(81,86,115,.8));/*#515673);/*rgba(124,165,158,.8);*/
+	
+}
+.name {
+	margin-left: 10%;
+}
+.page-footer {
+	margin-top:-60px;
+}

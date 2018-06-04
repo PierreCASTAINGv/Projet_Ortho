@@ -1,55 +1,240 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Menu Global</title>
-		<meta name="description" content="Menu generique" />
-		<meta name="keywords" content="orthalis, orthondontiste, pau" />
-		<meta name="author" content="king''s" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/style_parametres.css" />
-		
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<ul id="gn-menu" class="gn-menu-main">
-				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
-					<nav class="gn-menu-wrapper">
-						<div class="gn-scroller">
-							<ul class="gn-menu">
-								<li class="gn-search-item">
-									<!--<input placeholder="Search" type="search" class="gn-search">-->
-									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
-									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
-									<a href="profil.html"><div id="nomprofil">Francois Géant</div></a>
-								</li>
-								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
-								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
-								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
-								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
-								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
-							</ul>
-						</div><!-- /gn-scroller -->
-					</nav>
-				</li>
-				<li><a class="cabinettitre" href="cabinet.html">PARAMETRES EN TRAVAUX</a></li>
-			</ul>
-			<header id="parametres">
-				<h1>Container page <strong> PARAMETRES </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
-			</header> 
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-		<script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
-	</body>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+
+  <link href="css/style_parametres.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/nouislider.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="dentiste  lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" href="#" class="center">Paramètres 2018</a>
+      <ul class="right hide-on-med-and-down">
+			<li><a href="accueil.html">Accueil</a></li>
+			<li><a href="cabinet.html">Cabinet</a></li>
+			<li><a href="dossier.html">Dossier Patient</a></li>
+			<li><a href="chat.html">Chat</a></li>
+			<li><a href="parametres.html">Paramètres</a></li>
+			<li><a href="compte.html">Ajout Compte</a></li>
+      </ul>
+      <ul id="slide-out" class="sidenav">
+		 <li>
+			<div class="user-view center-align">
+				<div class="background">
+					<!-- <img src="img/img4.jpg">-->
+				</div>
+					<a href="monprofil.html"><img class="circle" src="img/visage3.jpg"></a>
+					<a href="#name"><span class="white-text name">Irène Fargot</span></a>
+			</div>
+		 </li>
+			<li><a class="waves-effect" href="accueil.html"><i class="gn-icon gn-icon-home"></i>Accueil</a></li>
+			<li><a class="waves-effect" href="cabinet.html"><i class="gn-icon gn-icon-cabinet"></i>Cabinet</a></li>
+			<li><a class="waves-effect" href="dossier.html"><i class="gn-icon gn-icon-dossier"></i>Dossier Patient</a></li>
+			<li><a class="waves-effect" href="chat.html"><i class="gn-icon gn-icon-chat"></i>Chat</a></li>
+			<li><a class="waves-effect" href="parametres.html"><i class="gn-icon gn-icon-parametre"></i>Paramètres</a></li>
+			<li><a class="waves-effect" href="compte.html"><i class="gn-icon gn-icon-profil"></i>Ajout Compte</a></li>
+	 </ul>
+		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="gn-icon gn-icon-burger"></i></a
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="img/img4.jpg" alt="" class="circle">
+      <span class="title"><br></span>
+    <label></label>
+  <form action="#">
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" checked />
+        <span>Français</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" />
+        <span>Anglais</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio"  />
+        <span>Espagnol</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="group1" type="radio" disabled="disabled" />
+        <span>Russe</span>
+      </label>
+    </p>
+  </form>
+      <a href="#!" class="secondary-content"><i class="material-icons">Langues</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title"><br></span>
+      <p> 
+       <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Mot de passe</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Mot de pase</h4>
+      <p>fenêtre modale</p>
+      <p>pour modifier</p>
+      <p>son mot de passe</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Valider</a>
+    </div>
+  </div>  
+      </p>
+     
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">Mot de passe</i>
+      <span class="title"><br></span>
+      <p> <br>
+       <form action="#">
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>2 h</span>
+      </label>
+      <label>
+        <input type="checkbox" />
+        <span>4 h</span>
+      </label>
+    
+      <label>
+        <input type="checkbox" />
+        <span>8 h</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>24 h</span>
+      </label>
+  
+      <label>
+        <input type="checkbox" />
+        <span>48 h</span>
+      </label>
+    </p>
+    </form>
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">Notifications</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title"><span>A</span></span>
+      <br>
+      <br>
+         <p><div id="range-input"></div></p>
+   <div id="test-slider"></div>      
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">Taille texte</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title"><br></span>
+      <p><br>
+         <p><div id="range2-input"></div></p><br>
+         <div id="test-slider"></div>
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">Contraste</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title"><br></span>
+      <p><br>
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">Rejouer le tuto</i></a>
+    </li>
+    
+  </ul>
+            
+  </div>
+  </div>
+ 
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="center icon-block">
+   			
+		   </div>	
+		</div>	
+	 </div>
+	  	   <!--<div id="snackbar6"><button class="badge6" data-badge="6">Urgent Téléphonez-moi!<br> Dc Androzz</button></div>*/-->
+   
+  </div>
+  </div>
+</div>
+   
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/nouislider.js"></script>
+  <!--<script src="js/fake-notif.js"></script>-->
+    
+  <script>
+      var slider = document.getElementById('range-input');
+      noUiSlider.create(slider, {
+      start: [20, 80],
+      connect: true,
+      step: 1,
+      orientation: 'horizontal',
+      range: {
+         'min': 0,
+         'max': 100
+       },
+       format: wNumb({
+         decimals: 0
+       })
+      });
+  </script>
+  <script>
+      var slider = document.getElementById('range2-input');
+      noUiSlider.create(slider, {
+      start: [20, 80],
+      connect: true,
+      step: 1,
+      orientation: 'horizontal',
+      range: {
+         'min': 0,
+         'max': 100
+       },
+       format: wNumb({
+         decimals: 0
+       })
+      });
+  </script>
+  <script>
+	  M.AutoInit();
+	  
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    options.opacity = 0.1;
+    var instances = M.Modal.init(elems, options);
+  });
+  </script>
+  </body>
 </html>

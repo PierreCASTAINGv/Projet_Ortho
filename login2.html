@@ -1,78 +1,89 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Menu Global</title>
-		<meta name="description" content="Menu generique" />
-		<meta name="keywords" content="orthalis, orthondontiste, pau" />
-		<meta name="author" content="king''s" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/style_login2.css" />
-		<script src="js/modernizr.custom.js"></script>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Login2</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style_login2.css"  media="screen,projection" />
+</head>
+<body>
+  <header>
+   <div class="section no-pad-bot" id="index-banner">
+     <div class="container">
+      	<div class="carousel carousel-slider">
+			<a class="carousel-item" href="#one!"><img src="./img/img2.jpg" alt="docteur"></a>
+			<a class="carousel-item" href="#two!"><img src="./img/img3.jpg" alt="docteur"></a>
+			<a class="carousel-item" href="#three!"><img src="./img/img4.jpg" alt="docteur"></a>
+			<a class="carousel-item" href="#four!"><img src="./img/img5.jpg" alt="docteur"></a>
+		</div>
+			<p class="header center white-text text-lighten-3"> Cabinet OVANTARDI</p>
+		<div class="row center">
+			<h5 class="header col s12 light"></h5>
+		</div>
+	  </div>
+   </div>
+ </header>
+<main>
+  <div class="container">
+    <div class="section">
+      <div class="center row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+			  <form id="fiche2" type="POST" action="#">
+			        <input type="text" name="code" placeholder="code patient">
+					<input type="password" name="pass" placeholder="Mot de Passe">
+					<input type="button" name="valider" value="Valider" onclick="mdp()">
+       	  </form><!--end form-->
+          </div>
+        </div>
+      </div>
+	</div>
+  </div>
+</main>
+  <footer class="center page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+		</div>
+      </div>
+    </div>
+		<div class="footer-copyright"><br>
+		  <div class="container-footer">
+			<a class="white-text text-lighten-3" href="http://materializecss.com">POLITIQUE DE CONFIDENTIALITE</a>
+			<br>
+			<a class="white-text text-lighten-3" href="http://materializecss.com">TERMES ET CONDITIONS</a>
+		  </div>
+		 </div>
 
-	</head>
-	<body>
-		<div class="container">
-			<header id="login1">
-				<p id="connect"> 
-					<span id="div_horloge"></span>
-				</p>
-				<section >
-					<div id="slider">
-				  <figure>
-					<img src="./img/img2.jpg" alt="docteur">
-					<img src="./img/img3.jpg" alt="docteur">
-					<img src="./img/img4.jpg" alt="docteur">
-					<img src="./img/img5.jpg" alt="docteur">
-					<img src="./img/img2.jpg" alt="">
-				  </figure>
-				</div>
-					<!--<p><img class="cercle" src="img/cabinet02.png" alt="orthalis"></p>-->
-					<p id="trendname"> Cabinet Ovantardi </p>
-					<!--form-->
-					<form  id="cabinet" type="POST" action="#">
-						<input type="text" placeholder="Code Client">
-						<input type="password" placeholder="Mot de passe">
-						
-						<a href="#"><label>Mot de passe oublié? </label><span>Téléphonez au 06.25.31.48</span> </a>
-						<input type="button" value="Valider" onclick="mdp()">
-						
-					</form><!--end form-->
-					
-				</section>
-				
-				<a href="profil.html"><div id="profilpic1" class="gn-icon-search"></div></a>
-				
-				<p id="legal">POLITIQUE DE CONFIDENTIALITE</p>
-				<p id="legal1">TERMES ET CONDITIONS</p>
-				<div id="snackbar">Some text some message..</div>
-			</header> 
-		</div><!-- /container -->
-<script>
-	
-  
-  function mdp(){
-		let correctcode = "B111" ;
-		let correctmdp = "C111" ;
-		let code = document.querySelector("input[type=text]");
-		let mdp = document.querySelector("input[type=password]");
-		if (code.value == correctcode && mdp.value == correctmdp){
+  </footer>
+
+	<div id="snackbar">Some text some message..</div>
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+	   $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+function mdp(){
+		let correct = "B111" ;
+		let correct2 = "C111"
+		let valid = document.querySelector("input[type=text]");
+		let valid2 = document.querySelector("input[type=password]");
+		if (valid.value == correct && valid2.value == correct2){
 			document.querySelector("input[type=button]").onclick = window.location.assign("accueil.html");;
 		}
 		else{
 			let x = document.querySelector("#snackbar");
 			x.className = "show";
 			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-			mdp.value = "";
+			valid.value = "";
 		}
 	}
-</script>
-
-	
-	</body>
+</script>	
+  </body>
 </html>
