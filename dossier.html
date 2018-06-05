@@ -1,54 +1,168 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Menu Global</title>
-		<meta name="description" content="Menu generique" />
-		<meta name="keywords" content="orthalis, orthondontiste, pau" />
-		<meta name="author" content="king''s" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/style_dossierpatient.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<ul id="gn-menu" class="gn-menu-main">
-				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span id="cache">Menu</span></a>
-					<nav class="gn-menu-wrapper">
-						<div class="gn-scroller">
-							<ul class="gn-menu">
-								<li class="gn-search-item">
-									<!--<input placeholder="Search" type="search" class="gn-search">-->
-									<!--<a class="gn-icon gn-icon-search"><span>Search</span></a>-->
-									<a href="profil.html"><div id="profilpic" class="gn-icon-search"></div></a>
-									<a href="profil.html"><div id="nomprofil">Francois Géant</div></a>
-								</li>
-								<li><a class="gn-icon gn-icon-home" href="accueil.html"><span id="nommenu">Accueil</span></a></li>
-								<li><a class="gn-icon gn-icon-cabinet" href="cabinet.html"><span id="nommenu">Cabinet</span></a></li>
-								<li><a class="gn-icon gn-icon-dossier" href="dossierpatient.html"><span id="nommenu">Dossier Patient</span></a></li>
-								<li><a class="gn-icon gn-icon-profil" href="monprofil.html"><span id="nommenu">Mon Profil</span></a></li>
-								<li><a class="gn-icon gn-icon-chat" href="chat.html"><span id="nommenu">Chat</span></a></li>
-								<li><a class="gn-icon gn-icon-parametre" href="parametres.html"><span id="nommenu">Paramètre</span></a></li>
-							</ul>
-						</div><!-- /gn-scroller -->
-					</nav>
-				</li>
-				<li><a class="cabinettitre" href="cabinet.html">DOSSIER PATIENT EN TRAVAUX</a></li>
-			</ul>
-			<header id="dossierpatient">
-				<h1>Container page <strong> DOSSIER PATIENT </strong> <span>Ici les elements <a href="#">Des pages Wireframes</a> de L'appli</span></h1>	
-			</header> 
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-		<script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
-	</body>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style_dossierpatient.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="dentiste  lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" href="#" class="center">Dossier Patient 2018</a>
+      <ul class="right hide-on-med-and-down">
+			<li><a href="accueil.html">Accueil</a></li>
+			<li><a href="cabinet.html">Cabinet</a></li>
+			<li><a href="dossier.html">Dossier Patient</a></li>
+			<li><a href="chat.html">Chat</a></li>
+			<li><a href="parametres.html">Paramètres</a></li>
+			<li><a href="compte.html">Ajout Compte</a></li>
+      </ul>
+      <ul id="slide-out" class="sidenav">
+		 <li>
+			<div class="user-view center-align">
+				<div class="background">
+					<!-- <img src="img/img4.jpg">-->
+				</div>
+					<a href="profil.html"><img class="circle" src="img/visage3.jpg"></a>
+					<a href="#name"><span class="white-text name">Irène Fargot</span></a>
+			</div>
+		 </li>
+			<li><a class="waves-effect" href="accueil.html"><i class="gn-icon gn-icon-home"></i>Accueil</a></li>
+			<li><a class="waves-effect" href="cabinet.html"><i class="gn-icon gn-icon-cabinet"></i>Cabinet</a></li>
+			<li><a class="waves-effect" href="dossier.html"><i class="gn-icon gn-icon-dossier"></i>Dossier Patient</a></li>
+			<li><a class="waves-effect" href="chat.html"><i class="gn-icon gn-icon-chat"></i>Chat</a></li>
+			<li><a class="waves-effect" href="parametres.html"><i class="gn-icon gn-icon-parametre"></i>Paramètres</a></li>
+			<li><a class="waves-effect" href="compte.html"><i class="gn-icon gn-icon-profil"></i>Ajout Compte</a></li>
+	 </ul>
+		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="gn-icon gn-icon-burger"></i></a
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+    
+  </div>
+  </div>
+ 
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+			  <div class="user-view center-align">
+				<div class="center background">
+					<!-- <img src="img/img4.jpg">-->
+				</div>
+					<a href="monprofil.html"><img class="circle2" src="img/visage3.jpg"></a>
+					<h6 class="light-blue-text">Irène Fargot</h6>
+					<br>
+				</div>
+                
+                
+                <div class="encadrement">
+					<div class="accordeon">
+						 <img class="cab" src="./fonts/png/pencil.png" alt="portrait"><span>Fargot</span>
+					</div>
+					
+			   </div>
+			   <div class="encadrement">
+					<div class="accordeon">
+						 <img class="cab" src="./fonts/png/pencil.png" alt="portrait"><span>Irène</span>
+					</div>
+					
+			   </div>
+			   <div class="encadrement">
+					<div class="accordeon">
+						 <img class="cab" src="./fonts/png/phone.png" alt="portrait"><span><strong>06.25.34.89.45</strong></span>
+					</div>
+					
+			   </div>
+             	<div class="encadrement">
+					<div class="accordeon">
+						 <img class="cab" src="./fonts/png/alarm.png" alt="portrait"><span>Historique des rendez-vous</span>
+					</div>
+					<div class="content2">
+						<p>rendez-vous du 23/05/2018</p>
+						<p>rendez-vous du 23/05/2018</p>
+						<p>rendez-vous du 23/05/2018</p>
+						<p>rendez-vous du 23/05/2018</p>
+						<p>rendez-vous du 23/05/2018</p>
+						<p>rendez-vous du 23/05/2018</p>
+					</div>
+			   </div>
+					<div class="encadrement">
+						<div class="accordeon">
+							<img class="cab" src="./fonts/png/phone.png" alt="portrait"><span>Historique des paiements</span>
+						</div>
+						<div class="content2">
+							<p>Paiement du 12/05/2018</p>
+							<p>Paiement du 12/05/2018</p>
+							<p>Paiement du 12/05/2018</p>
+							<br>
+						</div>
+					</div>	
+					<br>
+					<div class="center encadrement">
+					<h6 class="red-text">A payer : 12 00 €</h6>
+					</div>
+		   </div>	
+		</div>	
+	 </div>
+	 
+	 
+	 
+     	   <!--<div id="snackbar6"><button class="badge6" data-badge="6">Urgent Téléphonez-moi!<br> Dc Androzz</button></div>*/-->
+    <br><br>
+  </div>
+  </div>
+</div>
+   
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    var slide = document.getElementsByClassName("accordeon");
+    var i;
+    
+    for (i = 0; i < slide.length; i++) {
+        slide[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+ </script>
+ <script>
+/*	M.AutoInit();
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });*/
+ $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+/*
+ window.onload=function() {
+       setInterval(montoast,5000);
+    };
+function  montoast() {  
+M.toast({html: 'I am a toast!'})
+}*/
+ </script>
+ 
+  </body>
 </html>

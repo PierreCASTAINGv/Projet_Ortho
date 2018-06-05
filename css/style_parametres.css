@@ -66,6 +66,9 @@
 		content: url('../src/icons/burger.png');
 }
 
+.gn-icon-play::before {
+		content: url('../src/icons/play2.png');
+}
 * {
     margin: 0;
     padding: 0;
@@ -338,7 +341,7 @@ div#slider figure:hover { animation-play-state:paused; }
 }
 
 body {
-    background: url('../img/fond2256-1284-3.png');
+    background: url('../img/fond2256-1284-7.png');
 	background-repeat: no-repeat;
 }
 
@@ -369,4 +372,12 @@ body {
   padding: 10px 20px;
   margin: 0;
   border: 1px solid #BFBFBF;
+}
+
+.teal-text {
+	margin-left: 7px;
+}
+label {
+    font-size: 0.8rem;
+    color: #26A69A;
 }

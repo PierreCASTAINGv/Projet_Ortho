@@ -7623,7 +7623,10 @@ input[type=range]::-ms-thumb {
 background: 
             linear-gradient(127deg, rgba(31,143,84,.8), rgba(31,143,84,0) 70.71%),
             linear-gradient(217deg, rgba(54,23,214,.8), rgba(54,23,214,0) 70.71%),
-            linear-gradient(336deg, rgba(168,84,31,.8), rgba(168,84,31,0) 70.71%); /*modif 000 .05*/
+            linear-gradient(336deg, rgba(168,184,131,.8), rgba(168,184,131,0) 70.71%); /*modif 000 .05*/
+             background: rgb(72,159,97);
+ 
+background: linear-gradient(87deg, rgba(25,50,60,0.5270307952282476) 11%, rgba(157,212,192,0.9107842966288078) 88%, rgba(182,209,194,1) 100%); 
 }
 
 .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {

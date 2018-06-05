@@ -1,67 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Login</title>
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style_login1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <header>
-   <div class="section no-pad-bot" id="index-banner">
-     <div class="container">
-    	<br>
-		<p class="header center"><img class="cercle" src="img/cercle.png" alt="orthalis"></p>
-		<br>
-		<p class="header center white-text text-lighten-3"> Application Orthodontiste </p>
-	 </div>
-    </div>
- </header>
-<main>
-  <div class="container">
-    <div class="section">
-      <div class="center row">
-        <div class="col s12 m4">
-        	<form id="fiche" type="POST" action="#">
-				<input type="password" name="pass" placeholder="Code Cabinet">
-				<input type="button" name="valider" value="Valider" onclick="mdp()">
-			</form><!--end form-->
-        </div>
-      </div>
-	</div>
-  </div>
-</main>
-  <footer class="center page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l12 s12">
-			<a href="qrcode.html"><img id="qrcode"  src="img/qrcode.png" alt="QRcode"></a>
-			<h6 class="text-lighten-4">Flash Qr-code</h6>
-        </div>
-      </div>
-    </div>
- 
-    <div class="footer-copyright">
-       <div class="container-footer">
-			  <a class="white-text text-lighten-3" href="http://materializecss.com">POLITIQUE DE CONFIDENTIALITE</a>
-				<br>
-			<a class="white-text text-lighten-3" href="http://materializecss.com">TERMES ET CONDITIONS</a>
-        </div>
-      </div>
-    <!--<div id="toast"><div id="img">Icon</div><div id="desc">A notification message..</div></div>-->
-  </footer>
-
-<div id="snackbar">Some text some message..</div>
-  <!--  Scripts-->
- <script src="js/jquery.min.js"></script>
- <script src="js/materialize.js"></script>
- <script src="js/init.js"></script>
- <script>
-	function mdp(){
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Menu Global</title>
+		<meta name="description" content="Menu generique" />
+		<meta name="keywords" content="orthalis, orthondontiste, pau" />
+		<meta name="author" content="king''s" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_login1.css" />
+		<script src="js/modernizr.custom.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<header id="login1">
+					
+				<section >
+					<p><a href="videortho.html"><img class="cercle" src="img/cercle.png" alt="orthalis"></a></p>
+					<p id="trendname"> Application Orthodontiste </p>
+					<!--form-->
+					<form  type="POST" action="#">
+						<input type="password" name="pass" placeholder="Code Cabinet">
+						<input type="button" value="Valider" onclick="mdp()"> 
+						
+					</form><!--end form-->
+				
+				</section>
+			
+				<p> <a href="video.html"><img id="Scan" src="img/qrcode.png" alt="QRcode"></a></p>
+				<p id="Qrcode">Flash Qr-code</p>
+				<p id="legal1"><a href="vide.html"</a>TERMES ET CONDITIONS</a></p>
+				<p id="legal"><a href="vide.html">POLITIQUE DE CONFIDENTIALITE</a></p>
+				<div id="snackbar">Some text some message..</div>
+				
+			</header> 
+		</div><!-- /container -->
+		
+		
+  
+<script>
+function mdp(){
 		let correct = "A111" ;
 		let valid = document.querySelector("input[type=password]");
 		if (valid.value == correct){
@@ -73,16 +57,8 @@
 			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 			valid.value = "";
 		}
-		}
-/*		 window.onload=function() {
-       setInterval(launch_toast,10000);
-    };
-		function launch_toast() {
-    var x = document.getElementById("toast")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
-}
-*/
-</script>	
-  </body>
+	}
+</script>
+ 
+	</body>
 </html>
