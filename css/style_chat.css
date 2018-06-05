@@ -69,7 +69,7 @@
 		content: url('../fonts/png/camera.png');
 }
 .gn-icon-image::before {
-		content: url('../fonts/png/image.png');
+		content: url('../fonts/png/compass.png');
 }
 * {
     margin: 0;
@@ -343,7 +343,7 @@ div#slider figure:hover { animation-play-state:paused; }
 }
 
 body {
-    background: url('../img/fond2256-1284-3.png');
+    background: url('../img/fond2256-1284-7.png');
 	background-repeat: no-repeat;
 }
 
@@ -353,9 +353,7 @@ body {
   margin-bottom: 8px;
   text-align:center;
 }
-.circle {
 
-}
 .sidenav {
 	background: linear-gradient(#95D8CA, rgba(81,86,115,.8));/*#515673);/*rgba(124,165,158,.8);*/
 	
@@ -380,7 +378,7 @@ body {
 
 
 .ph1{/* image de profil */
-    background: url("../src/profil.jpeg") no-repeat; 
+    background: url("../img/visage3.jpg") no-repeat; 
     background-size: cover;
     border:0.4em white solid ;
     border-radius: 5px;
@@ -485,14 +483,7 @@ main section div img {/* crayons edit */
     top:35%;right: 5%;
     width: 6%;
 }
-.patient1 {
-	margin: 180px 0 0 -15px ;
-	border: 1px solid rgba(114, 107, 107,0.2);
-    box-shadow: 1px 1px 15px rgba(71, 183, 184,.5) inset ;
-    border-radius: 15px;
-    background: rgba(158, 198, 199,.8);
-	padding: 7px 0 0 10px;
-}
+
 .patient {
 	margin: 18px 0 0 -15px ;
 	border: 1px solid rgba(114, 107, 107,0.2);
@@ -501,28 +492,20 @@ main section div img {/* crayons edit */
     background: rgba(158, 198, 199,.8);
 	padding: 7px 0 0 10px;
 }
-.patient1 label {
-    color:#577575;
-    font-size: 1em;
-}
-.patient1 p {
-    color: #755771;
-    font-size: 1em;
-}
+
 .doct {
 	margin: 18px -15px 0 65px ;
 	border: 1px solid rgba(114, 107, 107,0.2);
     box-shadow: 1px 1px 15px rgba(71, 183, 184,.5) inset ;
     border-radius: 15px;
     background: rgba(158, 198, 199,.8);
-	padding: 7px 10px -10px 10px;
+	padding: 7px 10px -10px 20px;
 }
 .console {
 	position:fixed;
-	top:570px;
-	left:0;
+	bottom: 0%;left:0%;
     width: 100%;
-	height:70px;
+	height:80px;
     /*overflow: hidden;  /* évite de dévoiler les images */
     
     padding: 20px 0 0 0;
@@ -536,8 +519,8 @@ main section div img {/* crayons edit */
 }
 #textarea1 {
 	margin:-50px 0 10px 50px ;
-    background: rgba(43, 148, 148,.08);
-    color:rgba(43, 148, 148,.9);
+    background: rgb(247, 247, 247);
+    color:rgba(0, 0, 0, 0.9);
     font-size: 1em;
     width:250px;
     box-shadow: 2px 2px 15px rgba(71, 183, 184,.7) ;
@@ -581,8 +564,9 @@ main section div img {/* crayons edit */
 
 .nb-main {
   padding: 16px;
-  margin-top: 0px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  margin-top: 40%;
+  overflow-y:auto;
+  height: 60vh; /* Used in this example to enable scrolling */
   /*background:red;*/
 }
 .sidenav-overlay {

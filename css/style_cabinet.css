@@ -105,7 +105,7 @@
     font-size: 1.6em;
     transition: 0.4s;
     border-radius: 2px;
-    background: white;/*rgba(88,73,110,0.1);*/
+    background: rgba(88,73,110,0.3);
    /*  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
     */
@@ -171,7 +171,7 @@
 }
 .accordeon span {
 	position:absolute;
-    color: #464A51;
+    color: #EBEBEB;
     font-size:.6em;
     padding: 6% 0 0 35%;
 }
@@ -309,7 +309,7 @@ div#slider figure:hover { animation-play-state:paused; }
     position: absolute;
     border-radius: 50%;
     box-shadow: 0px 0px 0px rgba(102, 92, 92,0)!important;
-    opacity:.4!important;
+    opacity:.6!important;
     /*border: 3px solid white;*/
     
 }
@@ -335,11 +335,6 @@ div#slider figure:hover { animation-play-state:paused; }
 }
 .icon-block .material-icons {
 	font-size: inherit;
-}
-
-body {
-    background: url('../img/fond2256-1284-3.png');
-	background-repeat: no-repeat;
 }
 
 .sidenav .user-view {

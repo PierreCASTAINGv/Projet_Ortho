@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  <link href="css/style_monprofil.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+</head>
+<body>
+  <nav class="dentiste  lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" href="#" class="center">Mon Profil 2018</a>
+      <ul class="right hide-on-med-and-down">
+			<li><a href="accueil.html">Accueil</a></li>
+			<li><a href="cabinet.html">Cabinet</a></li>
+			<li><a href="dossier.html">Dossier Patient</a></li>
+			<li><a href="chat.html">Chat</a></li>
+			<li><a href="parametres.html">Paramètres</a></li>
+			<li><a href="compte.html">Ajout Compte</a></li>
+      </ul>
+      <ul id="slide-out" class="sidenav">
+		 <li>
+			<div class="user-view center-align">
+				<div class="background">
+					<!-- <img src="img/img4.jpg">-->
+				</div>
+					<a href="profil.html"><img class="circle" src="img/visage3.jpg"></a>
+					<a href="#name"><span class="white-text name">Irène Fargot</span></a>
+			</div>
+		 </li>
+			<li><a class="waves-effect" href="accueil.html"><i class="gn-icon gn-icon-home"></i>Accueil</a></li>
+			<li><a class="waves-effect" href="cabinet.html"><i class="gn-icon gn-icon-cabinet"></i>Cabinet</a></li>
+			<li><a class="waves-effect" href="dossier.html"><i class="gn-icon gn-icon-dossier"></i>Dossier Patient</a></li>
+			<li><a class="waves-effect" href="chat.html"><i class="gn-icon gn-icon-chat"></i>Chat</a></li>
+			<li><a class="waves-effect" href="parametres.html"><i class="gn-icon gn-icon-parametre"></i>Paramètres</a></li>
+			<li><a class="waves-effect" href="compte.html"><i class="gn-icon gn-icon-profil"></i>Ajout Compte</a></li>
+	 </ul>
+		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="gn-icon gn-icon-burger"></i></a
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+   	  <header id="monprofil">
+				<main>
+					<section>
+					<div><div id="interne"">+</div></div><!--Profil pic-->
+					
+					<div onclick="edit(this)">
+						<label>Nom</label>
+						<p>Irène Fargot</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Téléphone</label>
+						<p>06.09.98.34.XX</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div onclick="edit(this)">
+						<label>Adresse</label>
+						<p>7 rue des feuilles mortes</p>
+						<img src="src/icons/edit.png" class="edit" >
+					</div>
+					<div>
+						<label>Premier Rendez-vous</label>
+						<p>07/08/2016</p>
+					</div>
+					<div>
+						<label>Praticien</label>
+						<p>Dr. Roger</p>
+					</div>
+					</section>
+            <div class="container">
+            <!--
+            pour les flèches
+            <p><</p>
+            <p>></p>-->
+					<div id="slider">
+							  <figure>
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+								<img src="./img/p1.jpg" alt="docteur">
+								<img src="./img/p2.jpg" alt="docteur">
+							   
+								<img src="./img/p1.jpg" alt="">
+								
+							  </figure>
+						</div>
+           
+				</main>
+			</header> 
+ </div>
+   </div>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/profil.js"></script>
+  
+    
+  
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
